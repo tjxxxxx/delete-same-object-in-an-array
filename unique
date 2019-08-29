@@ -1,0 +1,16 @@
+unique(TempTeacherLevel){
+    let result={};
+    let finalResult=[];
+    for(let i=0;i<TempTeacherLevel.length;i++){
+      result[TempTeacherLevel[i].TeacherLevelName]=TempTeacherLevel[i];
+    }
+    // console.log(result)
+     for(let item in result){
+      //  console.log(item);
+      //  console.log(result[item]);
+       finalResult.push(result[item]);
+
+     }
+     return finalResult;
+
+  }
